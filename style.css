@@ -48,8 +48,10 @@ p {
 
 .pointer {
 	position: absolute;
-	height: 480px; top:100px;
-	width: 480px; left:50%;
+	height: 480px; 
+	top:0;
+	left:0;
+	width: 480px; 
 	pointer-events: none;
 	z-index: 100;
 }
