@@ -47,19 +47,19 @@ p {
 }
 
 .pointer {
-	position: absolute;
 	height: 480px; 
-	top:0;
-	left:0;
 	width: 480px; 
+	position: fixed;
 	pointer-events: none;
-	z-index: 100;
+	z-index: 1000000000;
 }
 
 .pointer img {
 	width: 50px;
 	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
 	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+	position: fixed;
+	pointer-events: none;
 }
 
 #name{
@@ -405,6 +405,11 @@ div#draggable1, div#draggable2, div#draggable3, div#draggable4, div#draggable5, 
     	display: none;
 		}
 	}
+
+iframe{
+	pointer-events: auto;
+}
+
 
 form{
 	padding: 10px;
