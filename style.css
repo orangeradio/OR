@@ -393,8 +393,17 @@ div#draggable1, div#draggable2, div#draggable3, div#draggable4, div#draggable5, 
 	left: 253px;
 	z-index: 14;
 	min-height: 300px;
-	min-width: 500px
+	min-width: 500px;
 }
+
+
+@media screen and (max-width: 800px) {
+	#draggable7{
+    	width: 100%;
+    	max-width: 100%;
+    	min-width: 100%;
+	}
+	}
 
 
 @media screen and (max-width: 800px) {
