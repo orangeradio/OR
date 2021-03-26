@@ -58,7 +58,6 @@ p {
 	width: 500px; 
 	position: fixed;
 	z-index: 1000000000;
-	display: block;
 	pointer-events: none;
 }
 
@@ -69,9 +68,7 @@ p {
 	position: fixed;
 }
 
-a:hover ~ .pointer {
-  display: none;
-}
+
 
 #name{
 	position: absolute;
@@ -398,6 +395,13 @@ div#draggable1, div#draggable2, div#draggable3, div#draggable4, div#draggable5, 
 	left: 1098px;
 	z-index: 11;
 }
+
+@media screen and (max-width: 800px) {
+	#chatango{
+    	width: 100%;
+    	max-width: 100%;
+	}
+	}
 
 #draggable6{
 	top:42px;
