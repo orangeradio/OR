@@ -1,4 +1,31 @@
 
+
+//cursor orange
+
+$(document).mousemove(function (e) {
+  $(".pointer").css({ left: e.pageX, top: e.pageY });
+});
+
+
+$(".twitch-window").hover(function(){
+  $(".pointer").css("opacity", "0");
+  }, function(){
+  $(".pointer"). css("opacity", "100");
+});
+
+$(".chat-window").hover(function(){
+  $(".pointer").css("opacity", "0");
+  }, function(){
+  $(".pointer"). css("opacity", "100");
+});
+
+$(".radio-window").hover(function(){
+  $(".pointer").css("opacity", "0");
+  }, function(){
+  $(".pointer"). css("opacity", "100");
+});
+
+
 //desktop start menu
 
 const button = document.querySelector(".start-btn")
@@ -136,10 +163,4 @@ $(document).ready(function(){
   });
 });
 
-
-//cursor orange
-
-$(document).mousemove(function (e) {
-	$(".pointer").css({ left: e.pageX, top: e.pageY });
-});
 
